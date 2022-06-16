@@ -2,16 +2,13 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import { Meta, PostCard, PostWidget, Categories } from "../components";
 import { getPosts } from "../sevices";
-
-// const posts = [
-//   { title: "React testing", excerpt: "Learn React testing" },
-//   { title: "React tailwind", excerpt: "Learn React with tailwind" },
-// ];
+import { FeaturedPosts } from "../sections";
 
 export default function Home({ posts }) {
   return (
     <div className="container mx-auto px-10 mb-8">
       <Meta />
+      <FeaturedPosts />
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
         <div className="lg:col-span-8 col-span-1">
           {posts.map((post, index) => (
@@ -31,7 +28,6 @@ export default function Home({ posts }) {
 
 export async function getStaticProps() {
   const posts = (await getPosts()) || [];
-  console.log(posts);
   return {
     props: { posts },
   };
