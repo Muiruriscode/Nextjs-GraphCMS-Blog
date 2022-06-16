@@ -15,7 +15,7 @@ const Meta = ({ title, keywords, description }) => {
 };
 
 Meta.defaultProps = {
-  title: "GraphCMS",
+  title: "Web Dev Blog",
   keywords: "web development, React, Next.js",
   description: "Blog about web development",
 };
