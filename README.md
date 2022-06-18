@@ -1,3 +1,105 @@
+# Blog Application
+
+This is project involves the development of a blog website. The blog enables the owner to create posts, and other users to view and comment on the posts. The backend uses GraphCMS a headless CMS that enable the access of data using GraphQL. The project was guided by javascript Mastery
+
+## Development
+
+The Project utilised the following frameworks and technologies.
+
+- Next.js
+- Tailwind CSS
+- GraphCMS
+- GraphQL
+
+## Features of the Blog
+
+### Post Categories
+
+The posts are grouped into categories where a the relationship is a single post can belong to many categories.
+The categories can be accesses at the top right of the blog and also in the categories component.
+
+### Author
+
+The blog allows an author tho create their own content and share it. An author can create as many posts as they want.
+
+### Related and Recent posts
+
+The blog allows a user to access related posts and recent posts. On the firs page the blog will show the Recent posts and on clicking on the blog the posts related to the post will be shown on the posts widget from the latest one to be published.
+
+### Comments
+
+The blog allows users to comment on a post. Once the user has commented on the post the post will be reviewed by the owner Once reviewed, if the owner publishes the comment the comment will appear in the comments section.
+
+## Project
+
+### Components
+
+- [] contains all components of the project
+- [] componets accessed though the index.js of components folder for scalability
+
+### pages
+
+- [] contains all the pages that a user can navigate to.
+- [] next js provides inbuilt link that enables routing no need for react-router
+
+```js
+import Link from 'next/link'
+```
+
+### sevices
+
+- [] contains all the graphQl queries and mutations.
+- [] Queries interact with graphCMS to provide the data.
+
+### Section
+
+- [] Contains data for the featured posts
+
+### GraphCMS
+
+A Headless CMS that enables one to manage their content.
+
+- [] create a schema: Post schema, Author schema, Categories Schema, Comments schema
+- [] create content
+- [] Initialize defaults
+- [] Authorize access using a token
+- [] Give access to CRUD capabilities to data accesses
+
+## Installation
+
+### To install Next.js
+
+```bash
+npx create-react-app ./
+```
+
+### To use tailwind with Next.js
+
+```bash
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -P
+```
+
+Add all paths to taiwind.config.js
+
+```js
+content: [
+"./pages/**/*.{js,ts,jsx,tsx}",
+"./components/**/*.{js,ts,jsx,tsx}",
+],
+theme:
+```
+
+Add tailwind directive to global css
+
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+## Next Js
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
