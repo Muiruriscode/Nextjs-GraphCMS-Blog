@@ -34,13 +34,13 @@ The blog allows users to comment on a post. Once the user has commented on the p
 
 ### Components
 
-- [] contains all components of the project
-- [] componets accessed though the index.js of components folder for scalability
+- contains all components of the project
+- componets accessed though the index.js of components folder for scalability
 
 ### pages
 
-- [] contains all the pages that a user can navigate to.
-- [] next js provides inbuilt link that enables routing no need for react-router
+- contains all the pages that a user can navigate to.
+- next js provides inbuilt link that enables routing no need for react-router
 
 ```js
 import Link from 'next/link'
@@ -48,22 +48,22 @@ import Link from 'next/link'
 
 ### sevices
 
-- [] contains all the graphQl queries and mutations.
-- [] Queries interact with graphCMS to provide the data.
+- contains all the graphQl queries and mutations.
+- Queries interact with graphCMS to provide the data.
 
 ### Section
 
-- [] Contains data for the featured posts
+- Contains data for the featured posts
 
 ### GraphCMS
 
 A Headless CMS that enables one to manage their content.
 
-- [] create a schema: Post schema, Author schema, Categories Schema, Comments schema
-- [] create content
-- [] Initialize defaults
-- [] Authorize access using a token
-- [] Give access to CRUD capabilities to data accesses
+- create a schema: Post schema, Author schema, Categories Schema, Comments schema
+-  create content
+-  Initialize defaults
+-  Authorize access using a token
+-  Give access to CRUD capabilities to data accesses
 
 ## Installation
 
